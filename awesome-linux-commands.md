@@ -9,3 +9,4 @@
 
 - `dmidecode -t memory | grep -i size` _List memory slots_
 - `lshw -class memory` _List advanced information about memory slots_
+- `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p` _Increasing the amount of inotify watchers_
